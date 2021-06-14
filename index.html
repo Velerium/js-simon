@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="margin"></div>
+
+        <div class="small-container">
+
+            <div class="ad">
+                <span>AD</span>
+            </div>
+
+            <div class="smaller-container">
+
+                <div class="logo">
+                    <h1>Bool Says:</h1>
+                    <h3>I know... I know.</h3>
+                </div>
+
+                <div class="difficulty">
+                    <div>Change how long your memory test should last!</div>
+                    <form>
+                        <span>
+                            <input id="easy" class="difficulty"
+                                   name="difficulty" type="radio"
+                                   value="15">
+                            <label for="easy">Easy</label>
+                        </span>
+                        <span>
+                            <input id="normal" class="difficulty"
+                                   name="difficulty" type="radio"
+                                   value="30">
+                            <label for="normal">Normal</label>
+                        </span>
+                        <span>
+                            <input id="hard" class="difficulty"
+                                   name="difficulty" type="radio"
+                                   value="60">
+                            <label for="hard">Hard</label>
+                        </span>
+                    </form>
+                </div>
+
+                <div class="timer">
+                    <div>Time left:</div>
+                    <span id="time"></span>
+                </div>
+
+                <div class="user-numbers">
+                    <div>Numbers you got:</div>
+                    <span id="output-numbers"></span>
+                </div>
+
+                <span class="distraction">HEY LOOK AT ME!</span>
+                <span class="distraction"></span>
+
+                <div class="cpu-numbers">
+                    <div>The numbers were:</div>
+                    <span id="cpu-output"></span>
+                </div>
+
+                <div class="score"></div>
+
+                <div class="comment"></div>
+
+                <div class="buttons">
+                    <button id="simon">Play!</button>
+                </div>
+
+            </div>
+
+            <div class="ad">
+               <span>AD</span>
+            </div>
+
+        </div>
+
+        <div></div>
+
+        <div class="margin"></div>
+
+    </div>
+</body>
+</html>
