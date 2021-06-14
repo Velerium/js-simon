@@ -48,12 +48,14 @@ document.addEventListener ('DOMContentLoaded', function() {
     }
 
     function decoy() {
-            bait = setInterval(function() {
+        var bait = setInterval(function() {
             var random = Math.floor(Math.random()*999);
             var random2 = Math.floor(Math.random()*999);
             distraction.innerHTML = random;
             distraction2.innerHTML = random2;
-                        
+            if (s === 0) {
+                clearInterval(bait);
+            }
         }, 1000)
     }
 
@@ -104,8 +106,8 @@ document.addEventListener ('DOMContentLoaded', function() {
 
     function simonSays() {
 
-        if(s !== 0) {
-            alert('Nice try, cheater. Give it another shot!')
+        if(generated === 1) {
+            alert('Nice try, cheater. Refresh to give it another shot!')
             location.reload();
         }
 
