@@ -57,17 +57,23 @@ body {
 }
 
 .logo, .user-numbers, .cpu-numbers, .comment,
-.score, .difficulty form {
+.score, .difficulty form, .start {
     margin-bottom: 50px;
 }
 
 .logo h1, .user-numbers div, .cpu-numbers div,
 .progress-bar div:first-child,
-.difficulty div, .timer, .timer div, .distraction {
+.difficulty div, .timer, .timer div,
+.distraction, #let-you-know,
+.start div:first-child {
     margin-bottom: 20px;
 }
 
-.user-numbers, .cpu-numbers, .distraction {
+.distraction {
+    width: 30%;
+}
+
+.user-numbers, .cpu-numbers, .distraction, .start, .timer {
     display: none;
 }
 
@@ -81,7 +87,7 @@ form span {
     word-wrap: break-word;
 }
 
-.score, #time, .distraction {
+.score, #time, .distraction, #let-you-know {
     font-size: 25px;
     font-weight: 700px;
 }
